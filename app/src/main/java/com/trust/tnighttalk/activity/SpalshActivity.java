@@ -1,21 +1,17 @@
 package com.trust.tnighttalk.activity;
 
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.trust.tnighttalk.MainActivity;
 import com.trust.tnighttalk.R;
 import com.trust.tnighttalk.base.BaseActivtiy;
 import com.trust.tnighttalk.tool.TrustLogTool;
-
-import static com.trust.tnighttalk.tool.okhttp.TrustRequest.GET;
 
 public class SpalshActivity extends BaseActivtiy {
 
@@ -27,8 +23,20 @@ public class SpalshActivity extends BaseActivtiy {
 
     @Override
     protected void init(Bundle savedInstanceState) {
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            decorView.setSystemUiVisibility(option);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
+
         trustApplication.initService();
+
         LinearLayout linearLayout = findViewById(R.id.spalsh_layout);
+
+        linearLayout.setSystemUiVisibility(View.INVISIBLE);
+
         Animation animation= AnimationUtils.loadAnimation(this, R.anim.alpha);
         linearLayout.startAnimation(animation);
         animation.setAnimationListener(new Animation.AnimationListener() {

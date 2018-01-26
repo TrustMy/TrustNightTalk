@@ -3,6 +3,7 @@ package com.trust.tnighttalk.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.trust.tnighttalk.application.TrustApplication;
 import com.trust.tnighttalk.tool.bean.config.ConfigResultBean;
@@ -28,6 +29,7 @@ public abstract class BaseActivtiy  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(getLayoutId());
 
         if (trustApplication == null) {

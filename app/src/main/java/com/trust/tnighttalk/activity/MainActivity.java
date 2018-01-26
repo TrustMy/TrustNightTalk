@@ -1,10 +1,11 @@
-package com.trust.tnighttalk;
+package com.trust.tnighttalk.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.trust.calculatelayout.TrustUITool;
+import com.trust.tnighttalk.R;
 import com.trust.tnighttalk.activity.SpalshActivity;
 import com.trust.tnighttalk.base.BaseActivtiy;
 import com.trust.tnighttalk.tool.TrustLogTool;
