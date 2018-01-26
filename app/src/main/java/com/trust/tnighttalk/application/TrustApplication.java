@@ -71,7 +71,6 @@ public class TrustApplication extends Application {
         //初始化网络接口
         trustRequest = new TrustRequest(resultCallBack,serverUrl,this);
 
-        initService();
     }
 
 
@@ -79,7 +78,7 @@ public class TrustApplication extends Application {
     /**
      * 初始化service
      */
-    private void initService(){
+    public void initService(){
         bindService(new Intent(this, TrustApplication.class), serviceConnection, Context.BIND_AUTO_CREATE);
     }
 

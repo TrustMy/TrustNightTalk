@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#90e2e0</item>
+
+    </style>
+
 </resources>

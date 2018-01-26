@@ -19,7 +19,7 @@ import static com.trust.tnighttalk.tool.okhttp.TrustRequest.INTENT_SUCCESS;
  */
 
 public abstract class BaseActivtiy  extends AppCompatActivity {
-    private static TrustApplication trustApplication;
+    protected static TrustApplication trustApplication;
 
     protected abstract int getLayoutId();
     protected abstract void init(Bundle savedInstanceState);
