@@ -14,10 +14,9 @@
         android:theme="@style/BaseTheme">
         <service android:name=".server.TrustServer" />
 
-        <activity android:name=".activity.MainActivity">
-
-        </activity>
-        <activity android:name=".activity.SpalshActivity"
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity
+            android:name=".activity.SpalshActivity"
             android:theme="@style/startTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

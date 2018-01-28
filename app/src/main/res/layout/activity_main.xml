@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.trust.calculatelayout.TrustTelescopicLinerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.trust.calculatelayout.TrustTelescopicRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.trust.tnighttalk.activity.MainActivity">
 
 
-    <TextView
-        android:id="@+id/test"
-        android:text="asdasdasd"
-        android:background="@color/colorPrimary"
-        app:trust_layout_width = "500"
-        app:trust_layout_height = "500"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:background="@color/colorAccent"
+        app:trust_layout_width = "-1"
+        app:trust_layout_height = "491"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
 
 
-
-    <TextView
-        android:background="@color/colorPrimary"
-        app:trust_layout_marginTop = "50"
-        app:trust_layout_width = "300"
-        app:trust_layout_height = "300"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
+   <RadioGroup
+       android:background="@color/colorPrimary"
+       android:layout_alignParentBottom="true"
+       app:trust_layout_width = "-1"
+       app:trust_layout_height = "46"
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
 
 
-</com.trust.calculatelayout.TrustTelescopicLinerLayout>
+   </RadioGroup>
+</com.trust.calculatelayout.TrustTelescopicRelativeLayout>

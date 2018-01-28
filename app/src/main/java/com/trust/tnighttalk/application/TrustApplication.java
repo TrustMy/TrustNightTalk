@@ -66,7 +66,7 @@ public class TrustApplication extends Application {
     private void init() {
         //初始化 屏幕适配
         TrustUITool.initTrustUITool(context.getApplicationContext());
-        TrustUITool.setBenchmark(1080,2106);
+        TrustUITool.setBenchmark(303,537);
 
         //初始化网络接口
         trustRequest = new TrustRequest(resultCallBack,serverUrl,this);
