@@ -4,26 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     tools:context="com.trust.tnighttalk.activity.MainActivity">
+
+    <include
+        android:id="@+id/tool_layout"
+        layout="@layout/tool_layout"
+       />
+
 
 
     <FrameLayout
-        android:background="@color/colorAccent"
+        android:layout_above="@+id/main_radiogroup"
+        android:layout_below="@+id/tool_layout"
+        android:id="@+id/main_fragmentlayout"
         app:trust_layout_width = "-1"
         app:trust_layout_height = "491"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent"/>
 
 
-   <RadioGroup
-       android:background="@color/colorPrimary"
-       android:layout_alignParentBottom="true"
-       app:trust_layout_width = "-1"
-       app:trust_layout_height = "46"
-       android:orientation="horizontal"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:background="@color/colorWhile"
+        android:layout_alignParentBottom="true"
+        app:trust_layout_height = "46"
+        app:trust_layout_width = "-1"
+        android:id="@+id/main_radiogroup"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
 
-   </RadioGroup>
+        <RadioButton
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:id="@+id/radio_home"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:id="@+id/radio_explore"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio_main"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp" />
+
+
+        <RadioButton
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:id="@+id/radio_"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RadioButton
+            android:drawablePadding="-20dp"
+            android:gravity="center"
+            android:id="@+id/radio_user"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
 </com.trust.calculatelayout.TrustTelescopicRelativeLayout>

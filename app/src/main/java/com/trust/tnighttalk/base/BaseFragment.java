@@ -1,9 +1,13 @@
 package com.trust.tnighttalk.base;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.trust.tnighttalk.application.TrustApplication;
 import com.trust.tnighttalk.tool.bean.config.ConfigResultBean;
@@ -11,38 +15,56 @@ import com.trust.tnighttalk.tool.bean.config.ConfigResultBean;
 import java.util.Map;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
 import static com.trust.tnighttalk.tool.okhttp.TrustRequest.INTENT_SUCCESS;
 
 /**
- * Created by Trust on 2018/1/26.
+ * Created by Trust on 2018/1/29.
  */
 
-public abstract class BaseActivtiy  extends AppCompatActivity {
+public abstract class BaseFragment  extends Fragment{
     protected static TrustApplication trustApplication;
-
+    protected Context context;
+    protected Activity activity;
+    private View fragmentView;
+    Unbinder unbinder;
     protected abstract int getLayoutId();
-    protected abstract void init(Bundle savedInstanceState);
+    protected abstract void initDate();
     protected abstract void initView(Bundle savedInstanceState);
-    protected abstract void initDate(Bundle savedInstanceState);
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onAttach(Context context) {
+        this.context = context;
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        this.activity = activity;
+        super.onAttach(activity);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(getLayoutId());
-
-        ButterKnife.bind(this);
         if (trustApplication == null) {
-            trustApplication = (TrustApplication) getApplication();
-
+            trustApplication = (TrustApplication) activity.getApplication();
         }
-        TrustApplication.objectObserver = o;
-        init(savedInstanceState);
-        initView(savedInstanceState);
-        initDate(savedInstanceState);
 
+        TrustApplication.objectObserver = o;
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        fragmentView = LayoutInflater.from(context).inflate(getLayoutId(),null,false);
+        unbinder = ButterKnife.bind(this, fragmentView);
+        initView(savedInstanceState);
+        initDate();
+        return fragmentView;
     }
 
 
@@ -52,6 +74,7 @@ public abstract class BaseActivtiy  extends AppCompatActivity {
 
     protected abstract void requestSuccessCallBack(int code, Object object);
     protected abstract void requestErrorCallBack(int code, Object object);
+
 
     protected Observer<Object> o = new Observer<Object>() {
         @Override
@@ -79,4 +102,13 @@ public abstract class BaseActivtiy  extends AppCompatActivity {
 
         }
     };
+
+
+
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
 }
