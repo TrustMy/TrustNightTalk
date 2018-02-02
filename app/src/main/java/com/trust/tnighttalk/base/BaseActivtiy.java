@@ -1,5 +1,6 @@
 package com.trust.tnighttalk.base;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,7 @@ import static com.trust.tnighttalk.tool.okhttp.TrustRequest.INTENT_SUCCESS;
 
 public abstract class BaseActivtiy  extends AppCompatActivity {
     protected static TrustApplication trustApplication;
-
+    protected Context mContext;
     protected abstract int getLayoutId();
     protected abstract void init(Bundle savedInstanceState);
     protected abstract void initView(Bundle savedInstanceState);
@@ -38,6 +39,7 @@ public abstract class BaseActivtiy  extends AppCompatActivity {
             trustApplication = (TrustApplication) getApplication();
 
         }
+        mContext =this;
         TrustApplication.objectObserver = o;
         init(savedInstanceState);
         initView(savedInstanceState);

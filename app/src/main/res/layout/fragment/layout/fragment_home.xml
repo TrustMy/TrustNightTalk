@@ -33,7 +33,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical"
-              android:layout_marginBottom="8dp">
+              android:layout_marginBottom="2dp">
 
               <ImageView
                   android:background="@drawable/indicator_bg"

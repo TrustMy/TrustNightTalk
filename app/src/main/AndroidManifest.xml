@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
     package="com.trust.tnighttalk">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-
         android:name=".application.TrustApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,8 +26,12 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.0.0"
+            tools:replace="android:value" />
 
-        <meta-data android:name="android.support.VERSION"  tools:replace="android:value" android:value="26.0.0"/>
+        <activity android:name=".activity.home.HomeInfoActivity"></activity>
     </application>
 
 </manifest>

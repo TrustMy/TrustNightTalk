@@ -94,15 +94,15 @@ public class MainActivity extends BaseActivtiy {
             switch (i) {
                 case R.id.radio_home:
                     baseFragment = homeFragment;
-                    titleMsg = "Home";
+                    titleMsg = "HOME";
                     break;
                 case R.id.radio_explore:
                     baseFragment = exploreFragment;
-                    titleMsg = "explore";
+                    titleMsg = "Explore";
                     break;
                 case R.id.radio_main:
                     baseFragment = mainFragment;
-                    titleMsg = "main";
+                    titleMsg = "Main";
                     break;
                 case R.id.radio_:
                     baseFragment = otherFragment;

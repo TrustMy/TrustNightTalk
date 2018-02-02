@@ -1,6 +1,7 @@
 package com.trust.tnighttalk.fragment.home;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.trust.tnighttalk.R;
+import com.trust.tnighttalk.activity.home.HomeInfoActivity;
 import com.trust.tnighttalk.base.BaseFragment;
 
 import java.util.ArrayList;
@@ -54,6 +56,12 @@ public class ShareTheMoodFragment extends BaseFragment {
         shareTheMoodFragmentAdapter = new ShareTheMoodFragmentAdapter(context,false,false);
         shareTheMoodRecycler.setLayoutManager(shareTheMoodFragmentAdapter.getLinearLayoutManager(LinearLayoutManager.VERTICAL));
         shareTheMoodRecycler.setAdapter(shareTheMoodFragmentAdapter);
+        shareTheMoodFragmentAdapter.setOnClickListener(new ShareTheMoodFragmentAdapter.ShareMoodAdapterOnClickListener() {
+            @Override
+            public void onClickVideo(Object bean) {
+                startActivity(new Intent(context,HomeInfoActivity.class));
+            }
+        });
     }
 
     @Override

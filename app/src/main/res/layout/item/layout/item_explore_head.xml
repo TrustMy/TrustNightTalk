@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.trust.calculatelayout.TrustTelescopicLinerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_the_mood_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:trust_layout_marginLeft = "14"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_launcher_round"
+        android:text="All topics"
+        app:trust_layout_width = "200"
+        app:trust_layout_height = "26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        app:trust_layout_width = "271"
+        app:trust_layout_height = "216"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher_round"
+                        app:trust_layout_width = "25"
+                        app:trust_layout_height = "25"
+                        app:trust_layout_marginTop = "15"
+                        app:trust_layout_marginLeft = "14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        app:trust_layout_marginTop = "8"
+                        app:trust_layout_marginLeft = "14"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Chatting"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        app:trust_layout_marginTop = "4"
+                        app:trust_layout_marginLeft = "14"
+                        android:textStyle="bold"
+                        android:text="Find someone who knows you"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher_round"
+                        app:trust_layout_width = "25"
+                        app:trust_layout_height = "25"
+                        app:trust_layout_marginTop = "15"
+                        app:trust_layout_marginLeft = "14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        app:trust_layout_marginTop = "8"
+                        app:trust_layout_marginLeft = "14"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Chatting"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        app:trust_layout_marginTop = "4"
+                        app:trust_layout_marginLeft = "14"
+                        android:textStyle="bold"
+                        android:text="Find someone who knows you"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher_round"
+                        app:trust_layout_width = "25"
+                        app:trust_layout_height = "25"
+                        app:trust_layout_marginTop = "15"
+                        app:trust_layout_marginLeft = "14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        app:trust_layout_marginTop = "8"
+                        app:trust_layout_marginLeft = "14"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Chatting"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        app:trust_layout_marginTop = "4"
+                        app:trust_layout_marginLeft = "14"
+                        android:textStyle="bold"
+                        android:text="Find someone who knows you"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/ic_launcher_round"
+                        app:trust_layout_width = "25"
+                        app:trust_layout_height = "25"
+                        app:trust_layout_marginTop = "15"
+                        app:trust_layout_marginLeft = "14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        app:trust_layout_marginTop = "8"
+                        app:trust_layout_marginLeft = "14"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Chatting"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        app:trust_layout_marginTop = "4"
+                        app:trust_layout_marginLeft = "14"
+                        android:textStyle="bold"
+                        android:text="Find someone who knows you"
+                        app:trust_layout_width = "100"
+                        app:trust_layout_height = "32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        app:trust_layout_marginLeft = "14"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_launcher_round"
+        android:text="Special"
+        app:trust_layout_width = "200"
+        app:trust_layout_height = "26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_explore_head_recyclerview"
+        android:layout_gravity="center_horizontal"
+        app:trust_layout_width = "271"
+        app:trust_layout_height = "110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</com.trust.calculatelayout.TrustTelescopicLinerLayout>
+
+
+

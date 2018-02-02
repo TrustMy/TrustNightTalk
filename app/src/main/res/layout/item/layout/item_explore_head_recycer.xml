@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.trust.calculatelayout.TrustTelescopicLinerLayout android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_the_mood_recycler"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:trust_layout_width = "120"
+        app:trust_layout_height = "78">
+
+    <com.trust.calculatelayout.TrustTelescopicRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/vio"
+            app:trust_layout_width = "120"
+            app:trust_layout_height = "78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.trust.calculatelayout.TrustTelescopicRelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:gravity="bottom"
+        android:textStyle="bold"
+        app:trust_layout_marginLeft = "2"
+        android:textColor="#000000"
+        android:text="Art Design"
+        app:trust_layout_width = "120"
+        app:trust_layout_height = "18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:trust_layout_marginLeft = "2"
+        android:text="Banana art"
+        app:trust_layout_width = "120"
+        app:trust_layout_height = "15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</com.trust.calculatelayout.TrustTelescopicLinerLayout>
+
+
+

@@ -41,7 +41,7 @@
             android:drawablePadding="-20dp"
             android:gravity="center"
             android:id="@+id/radio_home"
-            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawableTop="@drawable/main_home_btn_bg"
             android:button="@null"
             android:layout_weight="1"
             android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
             android:gravity="center"
             android:id="@+id/radio_explore"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawableTop="@drawable/main_explore_btn_bg"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -60,7 +60,7 @@
         <RadioButton
             android:id="@+id/radio_main"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawableTop="@drawable/main_ic"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="75dp" />
@@ -71,7 +71,7 @@
             android:gravity="center"
             android:id="@+id/radio_"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawableTop="@drawable/main_other_btn_bg"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -82,7 +82,7 @@
             android:gravity="center"
             android:id="@+id/radio_user"
             android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawableTop="@drawable/main_user_btn_bg"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.trust.calculatelayout.TrustTelescopicRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trust.tnighttalk.activity.home.HomeInfoActivity">
+
+
+    
+    <com.trust.calculatelayout.TrustTelescopicRelativeLayout
+        android:id="@+id/title"
+        app:trust_layout_width = "-1"
+        app:trust_layout_height = "186"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/vio"
+            app:trust_layout_width = "-1"
+            app:trust_layout_height = "200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher_round"
+            app:trust_layout_width = "46"
+            app:trust_layout_height = "46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </com.trust.calculatelayout.TrustTelescopicRelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        app:trust_layout_marginLeft = "16"
+        app:trust_layout_marginRight = "16"
+        app:trust_layout_marginTop = "151"
+        app:trust_layout_width = "271"
+        app:trust_layout_height = "184"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhile">
+
+
+        <com.trust.calculatelayout.TrustTelescopicLinerLayout
+            android:orientation="vertical"
+            app:trust_layout_width = "271"
+            app:trust_layout_height = "184"
+            app:trust_layout_marginLeft = "14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.trust.calculatelayout.TrustTelescopicRelativeLayout
+                app:trust_layout_width = "263"
+                app:trust_layout_height = "30"
+                app:trust_layout_marginTop = "7"
+                app:trust_layout_marginLeft = "14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/item_share_mood_user_logo_img"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:trust_layout_width = "30"
+                    app:trust_layout_height = "30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                    app:trust_layout_marginLeft = "14"
+                    android:layout_toRightOf="@+id/item_share_mood_user_logo_img"
+                    app:trust_layout_width = "80"
+                    app:trust_layout_height = "30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_share_mood_user_name_tv"
+                        android:textStyle="bold"
+                        android:text="Aiden Smith"
+                        app:trust_layout_width = "-1"
+                        app:trust_layout_height = "17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/item_share_mood_msg_time_tv"
+                        android:text="08:13PM"
+                        app:trust_layout_width = "-1"
+                        app:trust_layout_height = "-1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+
+                <ImageView
+                    android:id="@+id/item_share_mood_attention_status_img"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_alignParentRight="true"
+                    app:trust_layout_marginRight = "41"
+                    app:trust_layout_width = "22"
+                    app:trust_layout_height = "22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </com.trust.calculatelayout.TrustTelescopicRelativeLayout>
+
+
+            <com.trust.calculatelayout.TrustTelescopicLinerLayout
+                android:id="@+id/share_mood_photo_layout"
+                android:visibility="visible"
+                app:trust_layout_width = "258"
+                app:trust_layout_height = "109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/share_mood_description_tv"
+                    app:trust_layout_width = "262"
+                    app:trust_layout_marginLeft = "14"
+                    app:trust_layout_marginTop = "7"
+                    app:trust_layout_height = "16"
+                    android:textStyle="bold"
+                    android:text="Five Hundred Miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    app:trust_layout_width = "250"
+                    app:trust_layout_marginTop = "7"
+                    app:trust_layout_marginLeft = "14"
+                    app:trust_layout_marginRight = "14"
+                    app:trust_layout_height = "86"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="As conscious traveling Paupers we must always be concerned about our dear Mother Earth.If you think about it,yout travel across her face,and She is the host to your journey;"
+                    />
+
+            </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+
+            <LinearLayout
+                app:trust_layout_width = "243"
+                app:trust_layout_marginLeft = "14"
+                app:trust_layout_marginRight = "14"
+                app:trust_layout_height = "32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:drawablePadding="-30dp"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:text="1.8k"
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:drawablePadding="-30dp"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:text="1.8k"
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp" />
+
+
+                <TextView
+                    android:drawablePadding="-30dp"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:text="540"
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp" />
+
+
+            </LinearLayout>
+
+
+        </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+      <com.trust.calculatelayout.TrustTelescopicLinerLayout
+          app:trust_layout_width = "-1"
+          app:trust_layout_height = "-1"
+          android:background="@color/colorWhile"
+          android:layout_below="@+id/title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+
+          <TextView
+              app:trust_layout_marginTop = "150"
+              app:trust_layout_marginLeft = "14"
+              android:gravity="center_vertical"
+              android:drawableLeft="@mipmap/ic_launcher_round"
+              android:text="Comment"
+              app:trust_layout_width = "200"
+              app:trust_layout_height = "40"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/home_info_recyclerview"
+              app:trust_layout_marginLeft = "16"
+              app:trust_layout_marginRight = "16"
+              app:trust_layout_width = "271"
+              app:trust_layout_height = "100"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+      </com.trust.calculatelayout.TrustTelescopicLinerLayout>
+    
+    
+    
+
+
+</com.trust.calculatelayout.TrustTelescopicRelativeLayout>
