@@ -8,8 +8,10 @@ import com.trust.tnighttalk.tool.TrustLogTool;
 import java.io.IOException;
 
 import okhttp3.Interceptor;
+import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 /**
  * Created by Trust on 2017/10/26.
@@ -27,11 +29,24 @@ public class LoggingInterceptor implements Interceptor {
 
 
         Response response = chain.proceed(request);
-
         long t2 = System.nanoTime();
-        TrustLogTool.d(String.format("接收响应: [%s] %.1fms%n%s",
-                response.request().url(), (t2 - t1) / 1e6d, response.headers()));
-
-        return response;
+        MediaType contentType = null;
+        String bodyString = null;
+        if (response.body() != null) {
+            contentType = response.body().contentType();
+            bodyString = response.body().string();
+        }
+        // 请求响应时间
+        double time = (t2 - t1) / 1e6d;
+        TrustLogTool.d(String.format("接收返回: [%s] %s%n%s%s",response.request(), time, response.headers(),
+                bodyString));
+        if (response.body() != null) {
+            // 深坑！
+            // 打印body后原ResponseBody会被清空，需要重新设置body
+            ResponseBody body = ResponseBody.create(contentType, bodyString);
+            return response.newBuilder().body(body).build();
+        } else {
+            return response;
+        }
     }
 }

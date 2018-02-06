@@ -23,7 +23,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import static com.trust.tnighttalk.tool.okhttp.TrustRequest.GET;
 
 public class MainActivity extends BaseActivtiy {
 
@@ -50,7 +49,7 @@ public class MainActivity extends BaseActivtiy {
 
     @Override
     protected void init(Bundle savedInstanceState) {
-        sendRequest("", null, 1, GET, null, false);
+//        sendRequest("", null, 1, GET, null, false);
     }
 
     @Override

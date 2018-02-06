@@ -15,7 +15,6 @@ import butterknife.ButterKnife;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
-import static com.trust.tnighttalk.tool.okhttp.TrustRequest.INTENT_SUCCESS;
 
 /**
  * Created by Trust on 2018/1/26.
@@ -64,11 +63,11 @@ public abstract class BaseActivtiy  extends AppCompatActivity {
         @Override
         public void onNext(Object o) {
             ConfigResultBean configResultBean = (ConfigResultBean) o;
-            if (configResultBean.getStatus() == INTENT_SUCCESS) {
+         /*   if (configResultBean.getStatus() == INTENT_SUCCESS) {
                 requestSuccessCallBack(configResultBean.getCode(),configResultBean.getObject());
             }else{
                 requestErrorCallBack(configResultBean.getCode(),configResultBean.getObject());
-            }
+            }*/
         }
 
         @Override

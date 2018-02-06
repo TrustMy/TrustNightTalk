@@ -19,6 +19,7 @@
         <activity
             android:name=".activity.SpalshActivity"
             android:theme="@style/startTheme">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,7 +32,10 @@
             android:value="26.0.0"
             tools:replace="android:value" />
 
-        <activity android:name=".activity.home.HomeInfoActivity"></activity>
+        <activity android:name=".activity.home.HomeInfoActivity" />
+        <activity android:name=".TestActivity">
+
+        </activity>
     </application>
 
 </manifest>
